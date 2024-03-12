@@ -149,7 +149,7 @@ sudo raspi-config
 ```
 sudo apt-get install -y libx264-dev libjpeg-dev
 sudo apt-get install -y libgstreamer1.0-dev
-sudo apt-get install -y libgstreamer-plugins-base1.0-dev libgstreamer-plugins-bad1.0-dev gstreamer1.0-plugins-bad-videoparsers gstreamer1.0-plugins-ugly gstreamer1.0-plugins-good gstreamer1.0-tools gstreamer1.0-gl gstreamer1.0-gtk3
+sudo apt-get install -y libgstreamer-plugins-base1.0-dev libgstreamer-plugins-bad1.0-dev gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-plugins-good gstreamer1.0-tools gstreamer1.0-gl
 ```
 
 ```
@@ -192,13 +192,14 @@ sudo raspi-config
 압축을 푼 파일은 다음 명령어를 통해 `Raspberry Pi`로 전송 할 수 있습니다.
 
 ```
-scp -r /path/to/COBOT_PRO_001 username@ip:/home/username
-ex) scp -r /home/user/Downloads/COBOT_PRO_001 pi@192.168.0.101:/home/pi/
+scp -r /path/to/COBOT_PRO_001-main username@ip:/home/username
+ex) scp -r /home/user/Downloads/COBOT_PRO_001-main pi@192.168.0.101:/home/pi/
 ```
 
 다운로드 받은 후 `coplay.py` 파일을 실행시키면 로봇이 동작하게 됩니다.
 
 ```
+cd COBOT_PRO_001-main
 sudo python3 coplay.py
 ```
 

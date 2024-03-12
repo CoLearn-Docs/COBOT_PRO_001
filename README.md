@@ -151,7 +151,7 @@ Once the basic setup is complete, reboot and install GStreamer and Websockets.
 ```
 sudo apt-get install -y libx264-dev libjpeg-dev
 sudo apt-get install -y libgstreamer1.0-dev
-sudo apt-get install -y libgstreamer-plugins-base1.0-dev libgstreamer-plugins-bad1.0-dev gstreamer1.0-plugins-bad-videoparsers gstreamer1.0-plugins-ugly gstreamer1.0-plugins-good gstreamer1.0-tools gstreamer1.0-gl gstreamer1.0-gtk3
+sudo apt-get install -y libgstreamer-plugins-base1.0-dev libgstreamer-plugins-bad1.0-dev gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-plugins-good gstreamer1.0-tools gstreamer1.0-gl
 ```
 
 ```
@@ -194,13 +194,14 @@ In a terminal on your local computer, navigate to the directory you extracted.
 Once extracted, the files can be transferred to the `Raspberry Pi` with the following command
 
 ```
-scp -r /path/to/COBOT_PRO_001 username@ip:/home/username
-ex) scp -r /home/user/Downloads/COBOT_PRO_001 pi@192.168.0.101:/home/pi/
+scp -r /path/to/COBOT_PRO_001-main username@ip:/home/username
+ex) scp -r /home/user/Downloads/COBOT_PRO_001-main pi@192.168.0.101:/home/pi/
 ```
 
 Once downloaded, run the `coplay.py` file to get the robot working.
 
 ```
+cd COBOT_PRO_001-main
 sudo python3 coplay.py
 ```
 
